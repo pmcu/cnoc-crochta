@@ -1,2 +1,0 @@
-# cnoc-crochta
-suíomh úr
