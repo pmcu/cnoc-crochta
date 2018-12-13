@@ -1,97 +1,115 @@
 <!DOCTYPE html>
 <html lang="ga">
 <head>
-<title>Geafta</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 <style>
-* {
-    box-sizing: border-box;
+.float-left-area  {
+		  width: 70%;
+		  float: left;
+		  }
+.float-right-area {
+		  width: 30%;
+		  float: left;
+		  }
+.inner-left	  {
+		  padding: 5px 5px 5px 5px;
+		  margin-right: 10px;
+		  border: #999999 1px solid;
+		  min-height: 60px;
+		  }
+.inner-right	  {
+		  font-size: 11px;
+		  padding: 5px 5px 5px 5px;
+		  border: #999999 1px solid;
+		  min-height: 60px;
+		  }
+.clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
+.float-left-area  {
+		  width: 60%;
+		  float: left;
+		  }
+.float-right-area {
+		  width: 40%;
+		  float: left;
+		  }
+.inner-left	  {
+		  padding: 5px 5px 5px 5px;
+		  margin-right: 10px;
+		  border: #999999 1px solid;
+		  min-height: 60px;
+		  }
+.inner-right	  {
+		  font-size: 11px;
+		  padding: 5px 5px 5px 5px;
+		  border: none;
+		  min-height: 60px;
+		  }
+.clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
+header{
+text-align:center;
 }
-
-body {
+ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
 }
 
-/* Style the header */
-.header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+font-size:20px;
 }
 
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+li:last-child {
+  border-bottom: none;
 }
 
-/* Change color on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+li a.active {
+  background-color: #552;
+  color: white;
 }
 
-.leftcolumn{
-float:left;
-width:60%;
-padding-left:6px;
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
-.rightcolumn{
-float:left;
-width:40%;
-padding:2px;
-font-family:;
-}
-p.serif{
-font-family: Arial, Helvetica, sans-serif;
-}
-
 </style>
+
+
 </head>
-<body>
+<body background="paper005.gif">
+<header><h2>Geafta Dubh</h2></header>
+<div class="float-left-area">
+<div class="inner-left">
+	<img src="blackgatebike.jpg"><br>
+Left content. Add your main body of content to this side.
 
-<div class="header">
-  <h1>Geafta Dubh</h1>
+</div>
 </div>
 
-<div class="topnav">
-  <a href="/tmarg.html">Teach</a>
-  <a href="#">Fear</a>
-  <a href="#">Lá</a>
-    <a href="#">Beart</a>
+<div class="float-right-area">
+<div class="inner-right">
+<ul>
+  <li><a class="active" href="#home">Baile</a></li>
+  <li><a href="tmarg.html">Teach</a></li>
+  <li><a href="#contact">Fear</a></li>
+  <li><a href="#about">Lá</a></li>
+  <li><a href="#about">Beart</a></li>
+</ul>
 </div>
-<div class="leftcolumn">
-<img src="https://raw.githubusercontent.com/pmcu/pic2/master/blackgatebike.jpg">
 </div>
-<div class="rightcolumn">
-	<p class="sansserif"> 
-	<h4>Mo Gheafta Dubh</h4>
-	Gearrán dubh iarainn<br>
-	a mhaireann firean<br>
-	<br>
-	Fiach dubh láidir<br>
-	droimlonrach,<br>
-	a dhreapann<br> 
-	spéartha - a sheolann<br> 
-	gaotha<br><br>
 
-	Tacúil ard daingean<br> 
-	a dhiallait leathan,<br>  
-	aonsúileach,<br>
-	de chraiceann tairbh<br>
-	nach gceapfar choíche.<br>
-	</p>
-</div>
+<div class="clear-floated"></div>
 </body>
+
 </html>
