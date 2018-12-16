@@ -15,13 +15,23 @@ float:left;
 width:33.33%;
 padding: 15px;
 }
+.row:after{
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width:600px){
+	.column{
+		width:100%;
+	}
+}
+
 .duine{
 float:left;
 width:150px;
 height:150px;
 float:left;
 }
-
 </style>
 <title>HTML div</title>
 
@@ -46,6 +56,17 @@ d'fhág nach dtiocfadh liom pilleadh ar an bhaile gan dul
 thar an fhoirgneamh uasal. Ach déarfainn dá mbeinn i mo
 chónaí in íochtar an bhaile go rachainn as mo chosán le
 bheith i ngaobhair Theach an Mhargaidh.
+</p>
+<p>
+Lín eile <br>
+Lín eile <br>
+Lín eile <br>
+Lín eile <br>
+Lín eile <br>
+Lín eile <br>
+Lín eile <br>
+Lín eile <br>
+Lín eile <br>
 </p>
 </div>
 </body>
