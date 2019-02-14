@@ -2,18 +2,33 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<title>Geafta Dubh</title>
 <style>
-body{
 
-	width:70%;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+	width:100%;
+}
+
+td {
+vertical-align:top;
+text-align: left;
+padding: 5px;
+}
+body{
+	background-image: url("pic/vintage-concrete.png");
+margin-left: 60px;
+	width:60%;
 	}
 img {
   float: left;
 	  padding:5px;
 }
 p {
-  font-family: arial, sans-serif;
+font-family: verdana;
 
+text-align: left;
 }
 A {
 text-decoration: none;
@@ -21,8 +36,8 @@ font-size: 30px;
 }
 .duine{
 float:left;
-width:80px;
-height:130px;
+width:90px;
+height:140px;
 float:left;
 padding:10px
 }
@@ -30,39 +45,89 @@ h1,h2,h3,h4{
 padding: 20px;
 text-align:center;
 }
+
+figure {
+
+  float: left;
+  width: 40%;
+  text-align: left;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+div {
+	margin-left: 60px;
+	margin-right: 100px;
+width:700px;
+
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 </head>
 <body>
-	<h2>Scéal Phóil</h2>
-	<p><img class="duine" src="duine/pol.png"><br>
-<p>
-	<h3>Croí an Bhaile Mhóir</h3>
-Tógadh Teach an Mhargaidh le bheith ina chroí don bhaile. Agus sin mar a bhí.
-Na sráideanna ba thábhachtaí, bhéarfadh siad a lucht siúil a fhad leis. Ba líonmhar
-é an lucht siúil údaí: feirmeoirí, fidléirí, fir an bhaile, mar aon lena a gcuid ban, páistí,
-is madadh, eallach na n-adharc, tréada caorach is muc, cearca, géanna, agus turcaigh
-, agus iad ag amharc as cásanna, cléir de gach creideamh faoina róbaí dorcha, draíodóirí
-agus mná Ultacha, taibhsí na muintire a d'imigh agus a cuireadh den tsaol, deabhain nárbh
-fhéidir go fóill a gcur i mbuidéil.
-</p>
 
-<p> <img src="baileMor/mhouse-pol1.png" alt="Teach Baile" >
-Sin agaibh cuid den dream a bhíodh á n-iompar ag sráideanna an bhaile, agus iad
-ar fad ag tabhairt aghaidhe ar Theach an Mhargaidh. Ní mór a n-ainmneacha a lua mar
-shráideanna: Sráid Chineál Eoghain aduaidh, Sráid an Droichid anoir, Sráid Theach Cruinnithe
-aneas, agus Sráid na hEaglaise aniar a thiteann go righin de Sheanchnoc na hEaglaise agus
-a d'oslódh a béal go fóill ar aghaidh leathan Theach an Mhargaidh, ach é a bheith ann.
-</p>
-<p>
-Ní de bharr a lárionaid sa bhaile amháin ba cheart 'croí' an bhaile a thabhairt
-ar Theach an Mhargaidh. A thúr ard cruinn faoina hata dheas ghéar bhiorach,
-istigh ina bholg bhí clog ollmhór de rothaí fiaclacha a choinníodh greim ar
-imeacht an ama, agus os a chionn sin, bhí clog de chineál eile, clog mór
-clogáis iarainn a cheoladh amach go binn láidir fríd cláracha a bhfuinneog, de
-réir chuntas an chloig thíos faoina bhun. Ba mhinic mo chluas le brící a mballa
-agus mo bhosa ar a mbolg - agus mé ag éisteacht, agus ag cuntas liom.
-</p>
-
+	<div>
+		<h2>Scéal Phóil</h2>
+	<table>
+<tr>
+<th>Croí an Bhaile Mhóir</th>
+<th id="pc"></th>
+</tr>
+<tr>
+<td>	<p>
+	Tógadh Teach an Mhargaidh le bheith ina chroí don bhaile. Agus sin mar a bhí.
+	Na sráideanna is tábhachtaí, bhéarfadh siad a lucht siúil a fhad leis.</p>
+	<p> Ba líonmhar
+	é an lucht siúil údaí: feirmeoirí, fidléirí, tincléirí, is fir an bhaile, mar aon lena
+	a gcuid ban, páistí, is madadh; eallach na n-adharc cam fada; tréada guagacha
+	caorach is muc; cearca, géanna, agus turcaigh, agus iad ag amharc uathu, as
+	cásanna, le hiontas; cléir de gach creideamh faoina róbaí dorcha go sáil;
+	draíodóirí agus mná Ultacha; taibhsí na muintire a d'imigh agus a cuireadh
+	den tsaol; deabhain nárbh fhéidir go fóill a gcur i mbuidéil.
+	</p></td>
+<td><figure><img class="duine" src="duine/pol.png">
+	<figcaption><p>Rineadh an pictiúr seo de Phól agus é ar saoire
+		san Afraic. É féin a rinne.</p></figcaption></figure>
+</td>
+</tr>
+<tr>
+<td>
+<img id ="teach" src="baileMor/mhouse-pol1.png" alt="Teach Baile" >
+</td>
+<td>
+	<p>
+	Sin agaibh cuid den dream a bhíodh á n-iompar ag sráideanna an bhaile, agus
+	iad ar fad ag tabhairt aghaidhe ar Theach an Mhargaidh. Ní mór a n-ainmneacha
+	a lua mar shráideanna: Sráid Chineál Eoghain aduaidh, Sráid an Droichid anoir,
+	Sráid an Tí Thionóil aneas, agus Sráid na hEaglaise aniar a thiteann go
+	righin de Sheanchnoc na hEaglaise agus a d'oslódh a béal go fóill ar
+	aghaidh leathan Theach an Mhargaidh, ach é a bheith ann os a comhair. Is léann
+	liom an t-easnamh!
+	</p>
+</td>
+</tr>
+</table>
+<tr>
+<td>
+	<p>
+	Ní de bharr a lárionaid sa bhaile amháin ba cheart 'croí' an bhaile a thabhairt
+	ar Theach an Mhargaidh. A thúr ard cruinn faoina hata dheas ghéar bhiorach,
+	istigh ina bholg bhí clog ollmhór de rothaí fiaclacha a choinníodh greim ar
+	imeacht an ama, agus os a chionn sin, bhí clog de chineál eile, clog mór
+	clogáis iarainn a cheoladh amach go binn láidir fríd cláracha a bhfuinneog, de
+	réir chuntas an chloig thíos faoina bhun. Ba mhinic mo chluas le brící a mballa
+	agus mo bhosa ar a mbolg - agus mé ag éisteacht, agus ag cuntas liom.
+	</p>
+</td>
+</tr>
 <nav> <a href="index.html"> Baile</a> | <a href="pol.html">Siar</a> | </nav>
+</div>
 </body>
 </html>
