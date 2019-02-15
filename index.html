@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ga">
 <head>
 	<meta charset="utf-8">
@@ -6,62 +5,29 @@
 <style>
 body{
 	background-image: url("pic/old_moon.png");
-margin-left: 60px;
+margin-left: 40px;
 margin-right: 100px;
 	width:60%
 }
-.float-left-area  {
-		  width: 70%;
-		  float: left;
-		  }
-.float-right-area {
-		  width: 30%;
-		  float: left;
-		  }
-.inner-left	  {
-		  padding: 5px 5px 5px 5px;
-		  margin-right: 10px;
-		  border: #999999 1px solid;
-		  min-height: 60px;
-		  }
-.inner-right	  {
-		  font-size: 11px;
-		  padding: 5px 5px 5px 5px;
-		  border: #999999 1px solid;
-		  min-height: 60px;
-		  }
-.clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
-.float-left-area  {
-		  width: 60%;
-		  float: left;
-		  }
-.float-right-area {
-		  width: 40%;
-		  float: left;
-		  }
-.inner-left	  {
-		  padding: 5px 5px 5px 5px;
-		  margin-right: 10px;
-		  border: #999999 1px solid;
-		  min-height: 60px;
-		  }
-.inner-right	  {
-		  font-size: 11px;
-		  padding: 5px 5px 5px 5px;
-		  border: none;
-		  min-height: 60px;
-		  }
-.clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
-header{
-text-align:center;
+table {
+  font-family: verdana;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+vertical-align:top;
+text-align: left;
+  padding: 8px;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 150px;
   background-color: #f1f1f1;
-  border: 1px solid #555;
+	font-size:20px;
+
 }
 
 li a {
@@ -69,50 +35,41 @@ li a {
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
+
 }
 
-li {
-  text-align: center;
-  border-bottom: 1px solid #555;
-font-size:20px;
-}
-
-li:last-child {
-  border-bottom: none;
-}
-
-li a.active {
-  background-color: #552;
-  color: white;
-}
-
-li a:hover:not(.active) {
+/* Change the link color on hover */
+li a:hover {
   background-color: #555;
   color: white;
 }
-.vl{
-	text-align: center;
-	border-left: 6px solid black;
-	height:260px;
-		padding:20px;
-	}
-
-		h1,h2,h3,h4{
-		padding: 5px;
-		text-align:center;
-		}
-
+#dan{
+	margin-left: 400px;
+}
 </style>
-
-
 </head>
-<body background="paper005.gif">
-<header><h2>Geafta Dubh</h2></header>
-<div class="float-left-area">
-<div class="inner-left">
-	<img src="baileMor/blackgatebike.jpg"><br>
-	<p>
+<body>
 
+
+<header><h2>Geafta Dubh</h2></header>
+	<table>
+		<tr>
+			<td>
+<ul>
+	<li><a class="active" href="#home">Baile</a></li>
+<li><a href="geafta.html">Geafa</a></li>
+	<li><a href="tmarg.html">Teach</a></li>
+<li><a href="saoithe.html">Saoithe</a></li>
+</ul>
+</td>
+<td>
+<img src="baileMor/blackgatebike.jpg">
+</td>
+</tr>
+<table id="dan">
+<tr>
+	<div>
+<td>
 	<h4>Mo Gheafta Dubh</h4>
 	<p class="vl">Gearrán dubh iarainn<br>
 	a mhaireann firean,<br>
@@ -128,35 +85,9 @@ li a:hover:not(.active) {
 	nach gceansófar<br>
 	nach gceapfar choíche<br>
 	<br>
+</td>
 </div>
-</div>
-<div class="float-right-area">
-<div class="inner-right">
-<ul>
-  <li><a class="active" href="#home">Baile</a></li>
-<li><a href="geafta.html">Geafa</a></li>
-	<li><a href="tmarg.html">Teach</a></li>
-<li><a href="saoithe.html">Saoithe</a></li>
-  <li><a href="nota.html">Nóta A</a></li>
-	<li><a href="nota.html">Nóta B</a></li>
-	<li><a href="nota.html">Nóta C</a></li>
-	<li><a href="nota.html">Nóta D</a></li>
-	<li><a href="nota.html">Nóta E</a></li>
-	<li><a href="nota.html">Nóta F</a></li>
-	<li><a href="focal.html">Focalstór A</a></li>
-<li><a href="focal.html">Focalstór B</a></li>
-<li><a href="focal.html">Focalstór C</a></li>
-<li><a href="focal.html">Focalstór D</a></li>
-<li><a href="coimhreir.html">Comhréir A</a></li>
-<li><a href="coimhreir.html">Comhréir B</a></li>
-<li><a href="coimhreir.html">Comhréir C</a></li>
-<li><a href="téacs.html">Téacsanna</a></li>
-
-</ul>
-</div>
-</div>
-
-<div class="clear-floated"></div>
+</tr>
+</table>
 </body>
-
 </html>
