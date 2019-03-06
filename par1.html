@@ -12,10 +12,21 @@
 	margin-right: 100px;
 		width:60%
 	}
+	table {
+	  border-collapse: collapse;
+	}
+
+	table, th, td {
+	  border: 1px solid gray;
+		vertical-align: top;
+	}
+	th{
+		text-align: left;
+	}
 	</style>
 </head>
 	<body>
-		<h1>Áiteanna Beannaithe</h1>
+		<h1 id="ceann">Áiteanna Beannaithe</h1>
 	<div id="demo"><blockquote><p>
 	Man dear, there was some quare nice ragweeds about Newholland. Many'
 	the summer's night when we were childer, we'd be up dancin'
@@ -34,10 +45,12 @@
 <div id="demo2">Amharc</div><br>
 	<div>
 	  <img id="myImage" src="pic/newholland.jpg"></div><hr>
-	  <div>
-	<button type="button" onclick="myFunction()">Buail clic</button>
-<button type="button" onclick="myFunction2()">Buail clic</button>
-<button type="button" onclick="myFunction3()">Buail clic</button>
+	  <div id ="myDIV">
+	<button id="b1" type="button" onclick="myFunction()">Buail A</button>
+<button id="b2" type="button" onclick="myFunction2()">Buail B</button></div>
+<div id >
+<button type="button" onclick="myFunction3()">Buail C</button>
+
 </div>
 <hr>
 <div id="eol">Eolas</div>
