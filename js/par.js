@@ -44,6 +44,8 @@ document.getElementById('myImage').src='pic/fear.jpg';
 document.getElementById("demo2").innerHTML="";
 document.getElementById("demo").innerHTML="";
 document.getElementById("ceann").innerHTML="Dhá Thaephota agus iad Lán";
+audio.pause();
+audio2.pause();
 audio3.play();
 }
 function myFunction3() {
@@ -53,6 +55,7 @@ document.getElementById("demo").innerHTML="";
 document.getElementById("demo2").innerHTML="";
 document.getElementById('myImage').src='baileMor/millwall.png';
 audio.pause();
+audio3.pause();
 audio2.play();
 myFunction5();
 myFunction6();
