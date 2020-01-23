@@ -1,0 +1,23 @@
+{
+  "people": [
+    {
+      "name": "Sissy",
+      "money": "120"
+      },
+      {
+        "name": "Barney",
+        "money": "80"
+      },
+      {
+        "name": "Molly",
+        "money": "42"
+      },
+      {
+        "name": "Jemmy",
+        "money": "1242"
+      }
+
+
+
+  ]
+}

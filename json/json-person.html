@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul id ="people">
+
+    </ul>
+    <h1>Person</h1>
+    <script type="text/javascript">
+
+      var person = {
+        name: "Brad",
+        age: 75,
+        address:{
+          street: "12 Dog Street",
+          city: "Clady"
+          },
+          childer: ["Maggie","Barney","Sissy"]
+
+        }
+
+        var people = [
+{
+  name: "Sissy",
+  money: "120",
+  },
+  {
+    name: "Barney",
+    money: "80",
+    },
+    {
+      name: "Minny",
+      money: "42",
+      }
+
+        ]
+
+
+      <!-- console.log(people[1].money); -->
+      var output = '';
+      for(var i = 0; i < people.length;i++){
+
+        output += '<li>'+'airgead: '+people[i].money+'</li>';
+          }
+          document.getElementById('people').innerHTML = output;
+
+
+    </script>
+  </body>
+</html>
