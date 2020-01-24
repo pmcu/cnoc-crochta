@@ -21,13 +21,12 @@ xhttp.onreadystatechange = function() {
     var output2 = '';
     for(var i = 0; i < people.length;i++){
 
-  output += '<li>'+people[i].name+'</li>' +'<li>'+people[i].link+'</li>';
+  output += '<li>'+people[i].name+'</li>';
 
         }
         document.getElementById('people').innerHTML = output;
   
         
-};
 xhttp.open("GET", "people.json", true);
 xhttp.send();
 </script>
