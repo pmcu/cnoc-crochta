@@ -2,19 +2,23 @@
   "people": [
     {
       "name": "Uilliam",
-      "money": "120"
+      "money": "120",
+      "link": "dog.html"
       },
       {
         "name": "Bríd",
-        "money": "80"
+        "money": "80",
+        "link": "broc.html"
       },
       {
         "name": "Lile",
-        "money": "42"
+        "money": "42",
+        "link": "cat.html"
       },
       {
         "name": "Maicín",
-        "money": "1242"
+        "money": "1242",
+        "link":"moncai.html"
       }
 
 
