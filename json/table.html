@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>   
+    <table id="userdata" border="5">            
+            <th>Revision  Date</th>
+            <th>Document  Name</th>
+            <th>Department </th>
+            <th>Description</th>
+            <th>Link</th>     
+    </table>
+<script>
+        var data = {
+        "person": [{
+            "revisiondate": "21 April 2016",
+            "documentname": "1658MC",
+            "department": "Sales",
+            "description": "Available",
+            "link": "href='1658MC.pdf'"
+        }, {
+            "revisiondate": "16 April 2016",
+            "documentname": "VCX16B",
+            "department": "Enginnering",
+            "description": "Not Available",
+            "link": "href='VCX16B.pdf'"
+        }, {
+            "revisiondate": "15 March 2016",
+            "documentname": "AB36F",
+            "department": "Custumer Services",
+            "description":  "Not Available",
+            "link": "href='AB36F.pdf'"
+        }, {
+            "revisiondate": "12 Agust 2016",
+            "documentname": "FC25D",
+            "department": "Technical Support",
+            "description": "Not Available",
+            "link": "href='FC25D.pdf'"
+        }]
+
+
+$.each(data.person, function(i, person) {
+            var tblRow =    "<tr><td>" + person.revisiondate + 
+                            "</td><td>" + person.documentname + 
+                            "</td><td>" + person.department +
+                            "</td><td>" + person.description + 
+                            "</td><a " + person.link + ">link text</a><td>" +
+                            "</td></tr>"
+            $(tblRow).appendTo("#userdata tbody");
+        });
+</script>
+</body>
+</html>
