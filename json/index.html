@@ -20,7 +20,7 @@ xhttp.onreadystatechange = function() {
     var output = '';
     for(var i = 0; i < people.length;i++){
 
-  output += <a target='_blank' href='"+ person.link.split('href=')[i]+"' >"+person.link.split('href=')[i]+"</a>';
+  output += <a href='"+ person.[i].link+"' >"+person.name"</a>';
         }
         document.getElementById('people').innerHTML = output;
         }
