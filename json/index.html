@@ -25,6 +25,8 @@ xhttp.onreadystatechange = function() {
 
         }
         document.getElementById('people').innerHTML = output;
+  }
+};
   
 xhttp.open("GET", "people.json", true);
     xhttp.send();
