@@ -7,7 +7,7 @@
   <body>
     <h1>Daoine Móra</h1>
     <ol id ="people">
-      <a id ="ceangal">Ceangal</a>
+      <a id ="ceangal" href="" >Ceangal</a>
     </ol>
 <script >
 
@@ -18,11 +18,14 @@ xhttp.onreadystatechange = function() {
     var people = response.people;
 
     var output = '';
+    var output2 = '';
     for(var i = 0; i < people.length;i++){
 
   output += '<li>'+people[i].name+'</li>' +'<li>'+people[i].link+'</li>';
+      output2 +='<li>'+[people[i].link+'</li>'
         }
         document.getElementById('people').innerHTML = output;
+    document.getElementById('ceangal').href = output2;
         }
 };
 xhttp.open("GET", "people.json", true);
