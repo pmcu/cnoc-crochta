@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<link rel="style.css" href="">
+</head>
+<body>
+	<h1>Laetha dá Raibh Ann</h1>
+<script>
+var i = 0; //start point
+var images = [];
+var time = 9000;
+
+// image list
+
+images[0] = 'img/1.jpg';
+images[1] = 'img/17.png';
+images[2] = 'img/3.jpg';
+images[3] = 'img/3b.jpg';
+images[4] = 'img/5.jpg';
+images[5] = 'img/6.jpg';
+images[6] = 'img/12.png';
+images[7] = 'img/17.png';
+images[8] = 'img/11b.jpg';
+images[9] = 'img/41.png';
+images[10] = 'img/21.jpg';
+images[12] = 'img/19.jpg';
+images[13] = 'img/14.jpg';
+images[14] = 'img/15.jpg';
+images[15] = 'img/20.jpg';
+images[17] = 'img/23.jpg';
+images[18] = 'img/22.jpg';
+images[20] = 'img/27.jpg';
+images[21] = 'img/26.jpg';
+images[22] = 'img/24.jpg';
+images[23] = 'img/29.jpg';
+images[24] = 'img/32.jpg';
+images[25] = 'img/35.jpg';
+images[26] = 'img/31.jpg';
+images[27] = 'img/40.png';
+images[28] = 'img/33.jpg';
+
+// change image
+function changeImg(){
+document.slide.src = images[i];
+
+	if( i < images.length -1 ){
+	i++;
+	} else {
+         i = 0;
+	}
+
+setTimeout("changeImg()", time);
+}
+
+window.onload = changeImg;
+
+</script>
+
+<script>
+var audio = new Audio( "ceol/noraJones.mp3");
+function audio(){
+audio.play();
+}
+</script>
+<img name="slide" alt="" width="800" height="400">
+<hr>
+
+
+<audio controls autoplay>
+  <source src="ceol/candyClown.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Léigh an Scéal</h2>
+<button onclick="myFunction()">Buail mé</button>
+<button onclick="back()">Back </button>
+
+<p><img id= "dog" src="" alt=""></p>
+<p id="demo">Stuff</p>
+
+<p id="array"></p>
+<script>
+
+var A = ['Aon',
+'img/1.jpg',
+'img/2.jpg',
+'img/3.jpg',
+'img/4.jpg',
+'img/5.jpg',
+'img/6.jpg',
+'img/7.jpg',
+'end'];
+
+var iterator = A.values();
+var picid = document.getElementById("dog");
+
+function myFunction() {
+var crnt = iterator.next().value;
+picid.src = crnt;
+back();
+}
+
+function back(){
+	if(picid.src =="end"){
+	picid.src="Aon";
+	iterator= A.values();
+document.getElementById("dog").src ="img/tadhg.jpg";
+	myfunction();
+	}
+}
+</script>
+
+</body>
+</html>

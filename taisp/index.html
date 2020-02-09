@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Léigh an Scéal</h2>
+<p><img id= "dog" src="" alt=""></p>
+<button onclick="myFunction()">Buail mé</button>
+<p id="demo"></p>
+
+<p id="array"></p>
+<!--<p><a href="sraithpic.html">Pictiúir</a></p> -->
+<p><a href="slide.html">Pictiúir</a></p>
+
+<script>
+var myObj, myJSON, text, obj;
+
+var A = ['Aon',
+'Zúbúkú an madadh a bhí aige',
+'Más tae a tá tú a dh iarraidh, déan é.',
+'Ba mhaith liom an hata biorrach, le do thoil.',
+'Ba mhaith liom an cat a ithe, le do thoil.',
+'end'];
+var iterator = A.values();
+place = document.getElementById("array");
+index = 0;
+function myFunction() {
+	document.getElementById("dog").src = "img/linn-1.jpg";
+	var crnt = iterator.next().value;
+	place.innerHTML = crnt;
+        back();
+}
+dem= document.getElementById("demo");
+function back(){
+	if(place.innerHTML =="end"){
+	place.innerHTML="Aon";
+	iterator= A.values();
+document.getElementById("dog").src ="img/tadhg.jpg";
+	myfunction();
+	}
+}
+</script>
+
+</body>
+</html>
