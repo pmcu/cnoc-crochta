@@ -8,13 +8,19 @@ body {
   padding-left: 5pt;
   padding-right: 5pt;
   padding-top: 5pt;
+  background-color: #ffe6cc;
+}
+#play{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 h1 {
-  font: 14pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font: 26pt Verdana, Geneva, Arial, Helvetica, sans-serif;
   font-weight: bold;
   line-height: 20pt;
+text-align: center;
 }
 
 
@@ -26,7 +32,9 @@ p.subheader {
 
 img {
   padding: 3pt;
-  float: right;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

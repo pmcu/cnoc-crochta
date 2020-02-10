@@ -8,13 +8,25 @@
 <body>
 	<h1>Laetha dá Raibh Ann</h1>
 
-<img name="slide" alt="" width="800" height="400">
+<img name="slide" alt="" width="" height="">
 <hr>
+<br>
 
-
-<audio controls autoplay>
-  <source src="ceol/lordRings.mp3" type="audio/mpeg">
+<audio id="play" controls autoplay>
+  <source src="ceol/SatieGymnopedies.mp3" type="audio/mpeg">
 </audio>
 <script src="main.js"></script>
+<hr>
+ <nav><a href="../index.html">Baile</a></nav>
+<hr>
+
+<button onclick="goBack()">Siar leat</button>
+
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 </body>
 </html>
