@@ -5,52 +5,24 @@
 </head>
 <body>
 
-<h1>Léigh an Scéal</h1>
+<h1>Scéalta ón tSeanbhaile</h1>
 
 <p><img id= "dog" src="img/10.jpg" alt=""></p>
 <button onclick="myFunction()">Buail mé</button>
-<p id="demo"></p>
-<p id="array"></p>
+<hr>
+
+<div id="demo" class="script"></div>
+<div id="array"></div>
 <!--<p><a href="sraithpic.html">Pictiúir</a></p> -->
 <p><a href="slide.html">Pictiúir</a></p>
 <p><a href="fis.html">Físeán</a></p>
 
-<script>
-var myObj, myJSON, text, obj;
-
-var A = ['Aon',
-'Zúbúkú an madadh a bhí aige',
-'Más tae a tá tú a dh iarraidh, déan é.',
-'Ba mhaith liom an hata biorrach, le do thoil.',
-'Ba mhaith liom an cat a ithe, le do thoil.',
-'end'];
-var iterator = A.values();
-place = document.getElementById("array");
-index = 0;
-function myFunction() {
-	document.getElementById("dog").src = "img/linn-1.jpg";
-	var crnt = iterator.next().value;
-	place.innerHTML = crnt;
-        back();
-}
-dem= document.getElementById("demo");
-function back(){
-	if(place.innerHTML =="end"){
-	place.innerHTML="Aon";
-	iterator= A.values();
-document.getElementById("dog").src ="img/tadhg.jpg";
-	myfunction();
-	}
-}
-</script>
  <nav><a href="../index.html">Baile</a></nav>
+<hr>
+
 <button onclick="goBack()">Siar</button>
+<hr>
 
-
-<script>
-function goBack() {
-  window.history.back();
-}
-</script>
+<script src="scriobh.js"></script>
 </body>
 </html>
