@@ -1,6 +1,6 @@
 var i = 0; //start point
 var images = [];
-var time = 20000;
+var time = 50000;
 
 // image list
 
